@@ -566,7 +566,7 @@
         <dt>Station</dt><dd>${esc(room.name)}</dd>
         <dt>Status</dt><dd>${esc(statusText(a))}</dd>
         <dt>Jobs done</dt><dd>${a.done}</dd>
-        <dt>Avg QA</dt><dd>${avgQ(a).toFixed(1)} / 100</dd>
+        <dt>Avg QA (demo)</dt><dd>${avgQ(a).toFixed(1)} / 100</dd>
         <dt>Tier</dt><dd>${tierOf(a)}</dd>
       </dl>
       <div class="insp-task">${esc(task)}</div>`;
