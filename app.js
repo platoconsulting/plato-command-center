@@ -8,6 +8,9 @@
     if (box) { box.hidden = false; box.textContent = 'Error: ' + e.message; }
   });
 
+  // #embed shows only the station map (used for screen-recorded videos).
+  if (/embed/.test(location.hash)) document.body.classList.add('embed');
+
   const P = window.PLATO;
   const W = 384, H = 240;
   const cv = document.getElementById('map');

@@ -202,6 +202,15 @@ dialog::backdrop { background: rgba(3, 2, 10, .78); }
 
 .err { position: fixed; left: 12px; bottom: 12px; right: 12px; background: #3a0b14; color: #ffb3bd; border: 2px solid var(--red); padding: 8px 12px; font-size: 18px; z-index: 10; }
 
+/* Embed mode: map only */
+body.embed { background: #05040b; }
+body.embed .wrap { padding: 0; max-width: none; }
+body.embed .topbar, body.embed .offer, body.embed .kpis, body.embed .side, body.embed .bottom,
+body.embed .foot, body.embed .panel-head, body.embed .legend { display: none !important; }
+body.embed .grid { display: block; }
+body.embed .map-panel { border: 0; }
+body.embed .map-panel::before, body.embed .map-panel::after, body.embed .map-wrap::after { display: none; }
+
 @media (max-width: 1080px) {
   .grid { grid-template-columns: minmax(0, 1fr); }
   .bottom { grid-template-columns: minmax(0, 1fr); }
