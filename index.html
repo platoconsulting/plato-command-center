@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plato Command Center</title>
+  <meta name="description" content="Plato Consulting LLC agent command center: watch AI agents carry client deliverables down the line.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true">P</div>
+        <div>
+          <h1>PLATO CONSULTING</h1>
+          <p>Agent Command Center</p>
+        </div>
+      </div>
+      <div class="status">
+        <span class="pill demo" title="Agents and outputs are simulated">DEMO MODE</span>
+        <span class="pill live"><i class="dot"></i>LINE RUNNING</span>
+        <span class="clock" id="clock">--:--:--</span>
+      </div>
+    </header>
+
+    <section class="kpis" aria-label="Line stats">
+      <div class="kpi"><div class="label">SHIPPED</div><div class="value" id="kShipped">0</div></div>
+      <div class="kpi"><div class="label">ON THE LINE</div><div class="value" id="kLine">0</div></div>
+      <div class="kpi"><div class="label">AVG CYCLE</div><div class="value" id="kCycle">--</div></div>
+      <div class="kpi"><div class="label">EST. HOURS SAVED</div><div class="value" id="kHours">0</div></div>
+    </section>
+
+    <main class="grid">
+      <section class="panel map-panel">
+        <div class="panel-head"><span>STATION MAP</span><span class="hint">click an agent</span></div>
+        <div class="map-wrap"><canvas id="map" width="1152" height="720" aria-label="Pixel map of the delivery line"></canvas></div>
+        <div class="legend" id="legend"></div>
+      </section>
+
+      <aside class="side">
+        <section class="panel">
+          <div class="panel-head"><span>SEND IT A JOB</span><span class="hint" id="queueHint"></span></div>
+          <form class="panel-body job-form" id="jobForm" autocomplete="off">
+            <label>Deliverable
+              <select id="fType"></select>
+            </label>
+            <label>Client
+              <input id="fClient" type="text" maxlength="40" placeholder="Client name" required>
+            </label>
+            <label>Brief
+              <textarea id="fBrief" rows="3" maxlength="240" placeholder="What do they need? e.g. Should we open a second location in Round Rock?"></textarea>
+            </label>
+            <button type="submit" class="run">&#9654; RUN IT DOWN THE LINE</button>
+            <label class="toggle"><input type="checkbox" id="fAuto" checked> Autopilot (sample jobs keep coming)</label>
+          </form>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head"><span>AGENT FILE</span></div>
+          <div class="panel-body" id="inspector"></div>
+        </section>
+      </aside>
+
+      <div class="bottom">
+        <section class="panel">
+          <div class="panel-head"><span>LINE LOG</span><span class="hint">live</span></div>
+          <div class="log" id="log" role="log" aria-live="polite"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head"><span>AGENT RANKINGS</span><span class="hint">by avg QA</span></div>
+          <div class="panel-body tiers" id="tiers"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head"><span>CLIENT DOCK</span><span class="hint">shipped</span></div>
+          <div class="panel-body shipped" id="shipped"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="foot">Demo mode: agents and outputs are simulated. Live mode will connect each station to Claude. &copy; Plato Consulting LLC</footer>
+  </div>
+
+  <dialog id="doc">
+    <div class="doc" id="docBody"></div>
+    <div class="doc-actions">
+      <button type="button" id="docDownload">DOWNLOAD .MD</button>
+      <button type="button" id="docClose" class="ghost">CLOSE</button>
+    </div>
+  </dialog>
+
+  <div id="err" class="err" hidden></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
