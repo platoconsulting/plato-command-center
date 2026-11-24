@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://platoconsulting.github.io/plato-command-center/sitemap.xml
