@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Market Research Brief</title>
+  <meta name="description" content="Sample deliverable from Plato Consulting LLC: a market research brief on opening a specialty coffee shop in Round Rock, TX.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink: #12142a; --muted: #5b6080; --line: #dfe2ee; --accent: #10b45a; --accent-bg: #e9fbf0; --paper: #ffffff; --bg: #eef0f6; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, system-ui, sans-serif; font-size: 15px; line-height: 1.55; }
+    .page { max-width: 820px; margin: 24px auto; background: var(--paper); padding: 48px 56px; box-shadow: 0 2px 0 var(--line); }
+    .top { display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--ink); padding-bottom: 14px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-family: "Press Start 2P", monospace; font-size: 10px; letter-spacing: 1px; }
+    .mark { width: 26px; height: 26px; background: #41ff8a; color: #04130a; display: grid; place-items: center; font-size: 12px; box-shadow: inset 0 0 0 2px #04130a; }
+    .stamp { font-family: "Press Start 2P", monospace; font-size: 8px; color: var(--accent); border: 2px solid var(--accent); padding: 5px 7px; }
+    h1 { font-size: 28px; line-height: 1.2; margin: 26px 0 8px; }
+    .meta { color: var(--muted); font-size: 13px; }
+    .question { margin: 20px 0 6px; padding: 14px 16px; background: var(--accent-bg); border-left: 4px solid var(--accent); font-size: 16px; }
+    h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); margin: 30px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+    ul, ol { padding-left: 20px; margin: 8px 0; }
+    li { margin: 4px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 14px; }
+    th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+    td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .note { font-size: 12.5px; color: var(--muted); }
+    .assume { color: #9a5b00; font-weight: 600; }
+    .model td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+    .model tr.total td { font-weight: 700; border-top: 2px solid var(--ink); }
+    .sources li { font-size: 12.5px; word-break: break-word; }
+    .foot { margin-top: 28px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+    a { color: #0b7d3f; }
+    @media (max-width: 640px) { .page { padding: 28px 16px; margin: 0; } h1 { font-size: 23px; } table { font-size: 13px; } }
+    @media print {
+      html, body { background: #fff; }
+      .page { margin: 0; box-shadow: none; max-width: none; padding: 0; }
+      h2 { break-after: avoid; }
+      table, tr { break-inside: avoid; }
+      @page { size: Letter; margin: 0.65in 0.7in; }
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <div class="top">
+      <div class="brand"><div class="mark">P</div>PLATO CONSULTING</div>
+      <div class="stamp">SAMPLE DELIVERABLE</div>
+    </div>
+
+    <h1>Market Research Brief: Opening a Specialty Coffee Shop in Round Rock, TX</h1>
+    <div class="meta">Prepared for Ember &amp; Oak Coffee (a fictional client used for this sample) &middot; Plato Consulting LLC &middot; November 2026 &middot; Standard package</div>
+
+    <div class="question"><b>The question:</b> Is there room in Round Rock for one more independent specialty coffee shop, and if so, how should it compete?</div>
+
+    <h2>1. Bottom line</h2>
+    <ul>
+      <li><b>Yes, with conditions.</b> The city has grown about 20% since the 2020 Census, and specialty coffee is now the most common way American adults drink coffee.</li>
+      <li><b>The real competition is the daily habit, not other cafes.</b> Fast drive-through chains own the morning run. An independent wins by being the best place to sit <i>and</i> fast for mobile orders.</li>
+      <li><b>Next step:</b> test a site in a growth corridor with few independents, and run a pop-up to test prices before signing a lease.</li>
+    </ul>
+
+    <h2>2. Market snapshot</h2>
+    <table>
+      <tr><th>Measure</th><th>Figure</th><th>Source</th></tr>
+      <tr><td>Population (city estimate)</td><td class="num">143,366</td><td>City of Round Rock, Oct 2026 [1]</td></tr>
+      <tr><td>Population (2020 Census)</td><td class="num">119,468</td><td>City of Round Rock, citing Census [2]</td></tr>
+      <tr><td>Projected population, 2030</td><td class="num">161,000+</td><td>City of Round Rock projections [2]</td></tr>
+      <tr><td>Median household income</td><td class="num">~$97,000</td><td>ACS 5-year estimate, as reported by StateDemographics [3]</td></tr>
+      <tr><td>U.S. adults who drank coffee yesterday</td><td class="num">66%</td><td>National Coffee Association, Fall 2025 [4]</td></tr>
+      <tr><td>U.S. adults who drank specialty coffee yesterday</td><td class="num">46%</td><td>NCA National Coffee Data Trends, Spring 2025 [5]</td></tr>
+      <tr><td>U.S. adults who drank traditional coffee yesterday</td><td class="num">42%</td><td>NCA National Coffee Data Trends, Spring 2025 [5]</td></tr>
+    </table>
+    <p class="note">The city's estimates run higher than the Census Bureau's survey figures (the 2024 American Community Survey put Round Rock at 135,665). We use the city figure for sizing and flag it as a risk below.</p>
+
+    <h2>3. Sizing the opportunity (scenario model)</h2>
+    <p>This is a rough model to show the order of magnitude. Lines marked <span class="assume">assumption</span> are our estimates, not published data, and are the first things we would check with a local survey.</p>
+    <table class="model">
+      <tr><td>Round Rock population (city estimate)</td><td>143,366</td></tr>
+      <tr><td>Share who are adults <span class="assume">(assumption: 72%)</span></td><td>103,224</td></tr>
+      <tr><td>Adults drinking specialty coffee on a given day (46%, NCA)</td><td>47,483</td></tr>
+      <tr><td>Share of those bought at a cafe or drive-through <span class="assume">(assumption: 35%)</span></td><td>16,619 drinks/day</td></tr>
+      <tr><td>Average ticket <span class="assume">(assumption: $6.00)</span></td><td>$99,714/day</td></tr>
+      <tr class="total"><td>Local cafe specialty coffee spend, per year</td><td>~$36.4M</td></tr>
+    </table>
+    <p>A shop doing 300 transactions a day would hold about 1.8% of that market and gross roughly $657,000 a year at a $6.00 ticket. The two assumptions that move the answer most are the cafe share and the average ticket.</p>
+
+    <h2>4. Who buys</h2>
+    <table>
+      <tr><th>Segment</th><th>What they want</th><th>How to win them</th></tr>
+      <tr><td><b>Commuters and parents</b></td><td>Speed, consistency, ordering ahead</td><td>Mobile ordering from day one and a fast pickup shelf. App-based coffee orders hit a record high in 2025 [6].</td></tr>
+      <tr><td><b>Remote and hybrid workers</b></td><td>Seats, Wi-Fi, outlets, a place to stay 1 to 3 hours</td><td>Comfortable seating and good Wi-Fi. Round Rock is home to Dell's headquarters and a large tech workforce.</td></tr>
+      <tr><td><b>Students and younger adults</b></td><td>Cold drinks, seasonal menus, a place to meet</td><td>46% of 18 to 24 year olds had a specialty coffee drink in the past day [4]. Texas State, ACC, and Texas A&amp;M Health all have Round Rock campuses.</td></tr>
+      <tr><td><b>Weekend families</b></td><td>Pastries, space, a relaxed visit</td><td>Food program and kid-friendly seating on weekends.</td></tr>
+    </table>
+
+    <h2>5. Competitive landscape</h2>
+    <table>
+      <tr><th>Competitor</th><th>Type</th><th>Location noted</th><th>Angle</th></tr>
+      <tr><td>Mi Mundo Coffeehouse &amp; Roastery</td><td>Independent, roasts in house</td><td>Downtown</td><td>Craft and local roast [7]</td></tr>
+      <tr><td>Lamppost Coffee</td><td>Small local group (Round Rock, Georgetown, Hutto, San Marcos)</td><td>1205 Round Rock Ave</td><td>Community cafe [8]</td></tr>
+      <tr><td>Black Rock Coffee Bar</td><td>Regional chain</td><td>RM 620</td><td>Speed plus a full espresso menu [9]</td></tr>
+      <tr><td>7 Brew</td><td>Drive-through chain</td><td>E Palm Valley Blvd</td><td>Speed and sweet specialty drinks [10]</td></tr>
+      <tr><td>Summer Moon Coffee</td><td>Texas chain</td><td>University Blvd</td><td>Signature wood-fired roast [9]</td></tr>
+      <tr><td>Cafe Java, Kerby Lane, Alamo Coffee</td><td>Local cafes and restaurants</td><td>Various</td><td>Breakfast and casual sit-down [9]</td></tr>
+      <tr><td>Starbucks, Dutch Bros, PJ's</td><td>National chains</td><td>Multiple</td><td>Habit, app, and loyalty programs</td></tr>
+    </table>
+    <p class="note">Built from public directories and local guides in November 2026. Check that each location is still open before using this list for site selection.</p>
+    <p><b>What this means:</b> the market is crowded at both ends. Craft-focused independents own "best coffee," and drive-through chains own "fastest coffee." The open space is a shop that does both: real seating plus a fast mobile pickup lane, in a part of town the independents have not reached yet.</p>
+
+    <h2>6. Trends to build around</h2>
+    <ul>
+      <li><b>Specialty is now the default.</b> Past-day specialty drinking passed traditional coffee for the first time in 2025 [5].</li>
+      <li><b>Cold drinks drive summer.</b> The NCA's 2025 summer market report found cold coffee dominated the season [11].</li>
+      <li><b>Ordering is moving to phones.</b> App-based coffee orders reached a record high in 2025 [6].</li>
+      <li><b>Drive-through chains are spreading in the suburbs.</b> 7 Brew, Dutch Bros, and Black Rock are all present in Round Rock (our observation from the listings above).</li>
+    </ul>
+
+    <h2>7. Risks and unknowns</h2>
+    <ul>
+      <li><b>Rent and buildout are not covered here.</b> They depend on the site and need real quotes.</li>
+      <li><b>Price pressure from drive-through chains</b> on the commuter segment.</li>
+      <li><b>Population figures disagree.</b> The city estimate is about 6% above the Census Bureau's 2024 survey figure. If the lower figure is closer, the market in section 3 shrinks by about 5%.</li>
+      <li><b>Bean costs have been volatile.</b> Plan for menu price changes during the first year.</li>
+    </ul>
+
+    <h2>8. Recommendations</h2>
+    <ol>
+      <li><b>Choose a hybrid format:</b> 30 or more seats plus a dedicated mobile pickup shelf, or a drive-up window if the site allows it.</li>
+      <li><b>Launch with mobile ordering and a simple loyalty program.</b> The chains already train customers to expect both.</li>
+      <li><b>Differentiate on the menu:</b> a strong cold and seasonal lineup, plus a local roaster partnership for credibility.</li>
+      <li><b>Test before you sign:</b> run a four-weekend pop-up to test prices in the $5.50 to $7.00 range and see real demand.</li>
+      <li><b>Next research step:</b> a short intercept survey (about 150 people) and foot-traffic data for two or three candidate sites.</li>
+    </ol>
+
+    <h2>Sources</h2>
+    <ol class="sources">
+      <li>City of Round Rock, "October 2026 population estimate: 143,366." <a href="https://www.roundrocktexas.gov/?p=589737">roundrocktexas.gov</a></li>
+      <li>City of Round Rock, demographic and census information, and 2020 to 2040 population projections. <a href="https://www.roundrocktexas.gov/departments/planning-and-development-services/demographic-census-information/">roundrocktexas.gov</a></li>
+      <li>StateDemographics, Round Rock profile (ACS 5-year). <a href="https://statedemographics.com/texas/round-rock">statedemographics.com</a></li>
+      <li>National Coffee Association newsroom, fall 2025 consumption release. <a href="https://ncausa.org/Newsroom/Grounds-for-celebration-Americans-remain-committed-to-coffee">ncausa.org</a></li>
+      <li>National Coffee Association, "Specialty coffee consumption hits 14 year high." <a href="https://ncausa.org/Newsroom/Specialty-coffee-consumption-hits-14-year-high">ncausa.org</a>; Daily Coffee News, June 17, 2025. <a href="https://dailycoffeenews.com/2025/06/17/u-s-specialty-coffee-consumption-reaches-new-high-beats-traditional-coffee/">dailycoffeenews.com</a></li>
+      <li>NACS, "App-Based Coffee Orders Reach Record High," September 2025. <a href="https://www.convenience.org/Media/Daily/2025/September/12/3-App-Based-Coffee-Orders-Record-High_Research">convenience.org</a></li>
+      <li>My Coffee Explorer, Round Rock guide. <a href="https://mycoffeeexplorer.com/guides/round-rock">mycoffeeexplorer.com</a></li>
+      <li>Community Impact, local coffee shops in Round Rock, Pflugerville and Hutto. <a href="https://communityimpact.com/round-rock-pflugerville-hutto/dining/sip-on-this-10-local-coffee-shops-in-round-rock-pflugerville-hutto/">communityimpact.com</a></li>
+      <li>Business directory listings (MapQuest, Go Round Rock, Round the Rock). <a href="https://goroundrock.com/?p=25455">goroundrock.com</a></li>
+      <li>7 Brew location page, Round Rock. <a href="https://locations.7brew.com/tx/round-rock/2130-e-palm-valley-blvd">7brew.com</a></li>
+      <li>Daily Coffee News, "Cold coffee ruled this summer," September 9, 2025. <a href="https://dailycoffeenews.com/2025/09/09/cold-coffee-ruled-this-summer-new-nca-market-report-finds">dailycoffeenews.com</a></li>
+    </ol>
+
+    <div class="foot">Method: desk research from public sources, November 2026. Research and drafting are AI-assisted; every figure is checked against its source and cited before delivery. Ember &amp; Oak Coffee is a fictional client created for this sample. &copy; Plato Consulting LLC</div>
+  </article>
+</body>
+</html>
